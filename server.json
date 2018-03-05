@@ -1,0 +1,9 @@
+{
+    "name":"pdf-grayscale-example",
+    "web":{
+        "webroot":"public"
+    },
+    "app":{
+        "cfengine":"lucee@5"
+    }
+}
