@@ -14,15 +14,15 @@ component displayname="PDF Color Converter"
         variables.ImageIOUtil = createObject( "java", "org.apache.pdfbox.tools.imageio.ImageIOUtil" );
         // io
         variables.JFile = createObject( "java", "java.io.File" );
-		// awt
+        // awt
         variables.ImageIO = createObject( "java", "javax.imageio.ImageIO" );
 
         return this;
     }
 
-	public void function pdfToImage( required string src, required string destination ) {
+    public void function pdfToImage( required string src, required string destination ) {
         // Read in the PDF as a PDDocument object
-		var document = variables.PDDocument.load( variables.JFile.init( src ) );
+        var document = variables.PDDocument.load( variables.JFile.init( src ) );
         // Pass the Document to a PDFRenderer, get the pages
         var renderer = variables.PDFRenderer.init( document );
         var pdPages = document.getDocumentCatalog().getPages();
@@ -36,11 +36,11 @@ component displayname="PDF Color Converter"
             variables.ImageIOUtil.writeImage( bim, destination & imageTitle & "-" & page++ & ".jpg", 200 );
         }
         document.close();
-	}
+    }
 
-	public void function imageToPDF( required string src, required string destination ) {
+    public void function imageToPDF( required string src, required string destination ) {
         // Create blank PDDocument as the new PDF shell
-		var document = variables.PDDocument;
+        var document = variables.PDDocument;
         // Read in the directory of images
         var dir = variables.JFile.init( src );
         // Iterate over each image and create a PDF page from it
@@ -56,5 +56,5 @@ component displayname="PDF Color Converter"
         }
         document.save( destination );
         document.close();
-	}
+    }
 }
