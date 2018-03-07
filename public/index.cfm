@@ -1,7 +1,7 @@
 <cfscript>
 
     PDFColorFormatUtil = new app.model.PDFColorFormatUtil();
-    PDFColorFormatUtil.pdfToImage( "resources/test.pdf", "resources/images/" );
+    PDFColorFormatUtil.pdfToImage( "resources/test.pdf", "resources/images/", 200 );
     PDFColorFormatUtil.imageToPDF( "resources/images", "resources/output/result.pdf" );
 
     writeOutput( "<h2>PDF to Grayscale Example:</h2>" );
