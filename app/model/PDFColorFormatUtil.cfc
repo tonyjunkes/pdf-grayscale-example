@@ -1,4 +1,4 @@
-component displayname="PDF Color Converter"
+component displayname="PDF Color Format Util"
     output=false
 {
     public PDFColorFormatUtil function init() {
