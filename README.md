@@ -1,6 +1,8 @@
 # PDF to Grayscale Example
 An example of how to convert a RGB formatted PDF to grayscale.
 
+http://tonyjunkes.com/blog/formatting-a-color-pdf-to-grayscale/
+
 ### How to use:
 
 - Make sure you have [Commandbox installed](https://commandbox.ortusbooks.com/content/setup/installation.html).
