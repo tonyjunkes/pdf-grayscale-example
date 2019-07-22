@@ -1,15 +1,19 @@
 {
-	"name":"pdf-grayscale-example",
-	"version":"0.0.1",
-	"description":"An example of how to convert a RGB formatted PDF to grayscale.",
-	"dependencies":{
-		"pdfbox-2.0.8":"jar:https://search.maven.org/remotecontent?filepath=org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar",
-		"pdfbox-tools-2.0.8":"jar:https://search.maven.org/remotecontent?filepath=org/apache/pdfbox/pdfbox-tools/2.0.8/pdfbox-tools-2.0.8.jar",
-		"fontbox-2.0.8":"jar:https://search.maven.org/remotecontent?filepath=org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar"
-	},
-	"installPaths":{
-		"pdfbox-2.0.8":"app/lib/pdfbox-2.0.8",
-		"pdfbox-tools-2.0.8":"app/lib/pdfbox-tools-2.0.8",
-		"fontbox-2.0.8":"app/lib/fontbox-2.0.8"
-	}
+    "name":"pdf-grayscale-example",
+    "version":"0.2.0",
+    "description":"An example of how to convert a RGB formatted PDF to grayscale.",
+    "dependencies":{
+        "pdfbox-2.0.8":"jar:https://search.maven.org/remotecontent?filepath=org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar",
+        "pdfbox-tools-2.0.8":"jar:https://search.maven.org/remotecontent?filepath=org/apache/pdfbox/pdfbox-tools/2.0.8/pdfbox-tools-2.0.8.jar",
+        "fontbox-2.0.8":"jar:https://search.maven.org/remotecontent?filepath=org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar",
+        "jempbox-1.8.16":"jar:https://search.maven.org/remotecontent?filepath=org/apache/pdfbox/jempbox/1.8.16/jempbox-1.8.16.jar",
+        "commons-logging-1.2":"jar:https://search.maven.org/remotecontent?filepath=commons-logging/commons-logging/1.2/commons-logging-1.2.jar"
+    },
+    "installPaths":{
+        "pdfbox-2.0.8":"app/lib/pdfbox-2.0.8/",
+        "pdfbox-tools-2.0.8":"app/lib/pdfbox-tools-2.0.8/",
+        "fontbox-2.0.8":"app/lib/fontbox-2.0.8/",
+        "jempbox-1.8.16":"app/lib/jempbox-1.8.16/",
+        "commons-logging-1.2":"app/lib/commons-logging-1.2/"
+    }
 }

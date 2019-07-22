@@ -3,13 +3,13 @@ component displayname="PDF Color Format Util"
 {
     public PDFColorFormatUtil function init() {
         // PDFBox
-        variables.PDDocument = createObject( "java", "org.apache.pdfbox.pdmodel.PDDocument" );
-        variables.PDPage = createObject( "java", "org.apache.pdfbox.pdmodel.PDPage" );
-        variables.PDPageContentStream = createObject( "java", "org.apache.pdfbox.pdmodel.PDPageContentStream" );
-        variables.PDRectangle = createObject( "java", "org.apache.pdfbox.pdmodel.common.PDRectangle" );
-        variables.PDImageXObject = createObject( "java", "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject" );
-        variables.PDFRenderer = createObject( "java", "org.apache.pdfbox.rendering.PDFRenderer" );
-        variables.ImageType = createObject( "java", "org.apache.pdfbox.rendering.ImageType" );
+        variables.PDDocument = createObject( "java", "org.apache.pdfbox.pdmodel.PDDocument", "org.apache.pdfbox" );
+        variables.PDPage = createObject( "java", "org.apache.pdfbox.pdmodel.PDPage", "org.apache.pdfbox" );
+        variables.PDPageContentStream = createObject( "java", "org.apache.pdfbox.pdmodel.PDPageContentStream", "org.apache.pdfbox" );
+        variables.PDRectangle = createObject( "java", "org.apache.pdfbox.pdmodel.common.PDRectangle", "org.apache.pdfbox" );
+        variables.PDImageXObject = createObject( "java", "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject", "org.apache.pdfbox" );
+        variables.PDFRenderer = createObject( "java", "org.apache.pdfbox.rendering.PDFRenderer", "org.apache.pdfbox" );
+        variables.ImageType = createObject( "java", "org.apache.pdfbox.rendering.ImageType", "org.apache.pdfbox" );
         // PDFBox Tools
         variables.ImageIOUtil = createObject( "java", "org.apache.pdfbox.tools.imageio.ImageIOUtil" );
         // io
